@@ -17,7 +17,14 @@ const PORTFOLIO_DATA = {
     education: "Bachelor of Informatic, Gunadarma University",
     photo: "image/pp.jpg",
     cvFile: "file/CV_Rifqi Fauzan.pdf",
-    bio: `A 2025 graduate of Gunadarma University's Informatics program with a focus on Back-End Development and a strong interest in Cloud Engineering. Experienced in the Merdeka Campus Independent Study Program Batch 6 at Bangkit Academy (Cloud Computing) and an internship as a Website Developer. Possesses certifications in web and cloud technologies, including Junior Web Programmer from BNSP. Proficient in JavaScript, TypeScript, PHP, SQL, HTML, and CSS and uses NestJS, Express.js, Laravel, and CodeIgniter frameworks for RESTful API development. Skilled in managing databases with MySQL, PostgreSQL, and SQL Server, and uses Git and GitHub for version control. Committed to continuously developing skills as a Back-End Developer and Cloud Engineer in building efficient, scalable, and sustainable systems.`,
+    bio: `Informatics graduate from Gunadarma University (2025), certified as a 
+    BNSP Junior Web Programmer, with a specialization in Back-End Development and Cloud 
+    Computing (Bangkit Academy alumnus). Experienced in designing, optimizing, and 
+    integrating RESTful APIs for enterprise systems (such as MES and ERP). Possesses strong 
+    proficiency in modern frameworks (NestJS, Laravel, Express.js) and complex relational 
+    database management (PostgreSQL, SQL Server, Prisma). Committed to continuously building 
+    efficient, scalable backend architectures and cloud infrastructures that deliver direct 
+    impact on business operations.`,
     social: {
       github: "https://github.com/RF10111",
       linkedin: "https://www.linkedin.com/in/rifqifauzan-rf10/",

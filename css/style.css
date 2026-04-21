@@ -912,6 +912,7 @@ html:not(.dark) .project-title {
   margin-bottom: 1rem;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -923,6 +924,7 @@ html:not(.dark) .project-desc {
 
 .project-desc.expanded {
   -webkit-line-clamp: unset;
+  line-clamp: unset;
 }
 
 .read-more-btn {
@@ -1152,6 +1154,7 @@ html:not(.dark) .cert-card {
   color: #f1f5f9;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
