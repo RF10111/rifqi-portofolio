@@ -8,7 +8,7 @@ const PORTFOLIO_DATA = {
     location: "Depok, Jawa Barat, Indonesia",
     education: "Bachelor of Informatic, Gunadarma University",
     photo: "image/pp.jpg",
-    cvFile: "file/CV_Rifqi Fauzan.pdf",
+    cvFile: "https://drive.google.com/file/d/1TA-oP0zv5nzBciBNPy0SxZGcoRrkOQdw/view?usp=sharing",
     bio: [
       `Bachelor's degree in Informatics with internship experience as a Backend Developer, supported by an official certification from Badan Nasional Sertifikasi Profesi (BNSP) as a Junior Web Programmer, along with various trainings and additional certifications in backend and cloud computing.`,
       `Directly involved in the development of systems such as Manufacturing Execution Systems (MES) and Point of Sales (POS) applications, including API design, database management, and system performance optimization. Experienced in handling data validation, bug fixing, and performance improvements to deliver efficient and reliable systems.`,
@@ -168,8 +168,8 @@ const PORTFOLIO_DATA = {
   ],
 
   certificates: [
-    { title: "Okupasi Junior Web Programmer", category: "bnsp", year: "2024", issuerLabel: "BNSP", issuerColor: "#92400e", image: "image/bnsp.jpg", link: "https://drive.google.com/file/d/1aLpJv8YsUYymxP1h9o9LX0CVwglfmyO2/view?usp=sharing" },
-    { title: "Preparing for Your Associate Cloud Engineer Journey", category: "gcsb", year: "2025", issuerLabel: "GCSB", issuerColor: "#ef4444", image: "image/Preparing for Your Associate Cloud Engineer Journey.png", link: "https://www.skills.google/public_profiles/7bac8c77-7f88-49b6-941a-2f588214bd53/badges/8431341" },
+    { title: "Okupasi Junior Web Programmer", category: "bnsp", year: "2025", issuerLabel: "BNSP", issuerColor: "#92400e", image: "image/bnsp.jpg", link: "https://drive.google.com/file/d/1aLpJv8YsUYymxP1h9o9LX0CVwglfmyO2/view?usp=sharing" },
+    { title: "Preparing for Your Associate Cloud Engineer Journey", category: "gcsb", year: "2024", issuerLabel: "GCSB", issuerColor: "#ef4444", image: "image/Preparing for Your Associate Cloud Engineer Journey.png", link: "https://www.skills.google/public_profiles/7bac8c77-7f88-49b6-941a-2f588214bd53/badges/8431341" },
     { title: "Google Cloud Computing Foundations Certificate", category: "gcsb", year: "2024", issuerLabel: "GCSB", issuerColor: "#ef4444", image: "image/Google Cloud Computing Foundations Certificate.png", link: "https://www.credly.com/badges/714a8eca-7334-404a-944d-0d99a06f1425/linked_in_profile" },
     { title: "Develop Serverless Applications on Cloud Run", category: "gcsb", year: "2024", issuerLabel: "GCSB", issuerColor: "#ef4444", image: "image/Develop Serverless Applications on Cloud Run.png", link: "https://www.cloudskillsboost.google/public_profiles/7bac8c77-7f88-49b6-941a-2f588214bd53/badges/9190411" },
     { title: "ML Infrastructure", category: "gcsb", year: "2024", issuerLabel: "GCSB", issuerColor: "#ef4444", image: "image/ML Infrastructure.png", link: "https://www.cloudskillsboost.google/public_profiles/7bac8c77-7f88-49b6-941a-2f588214bd53/badges/9189547" },
