@@ -1,3 +1,5 @@
+const { startTransition } = require("react");
+
 const PORTFOLIO_DATA = {
   /* ──────────── Personal Info ──────────── */
   personal: {
@@ -8,7 +10,7 @@ const PORTFOLIO_DATA = {
     location: "Depok, Jawa Barat, Indonesia",
     education: "Bachelor of Informatic, Gunadarma University",
     photo: "image/pp.jpg",
-    cvFile: "https://drive.google.com/file/d/1TA-oP0zv5nzBciBNPy0SxZGcoRrkOQdw/view?usp=sharing",
+    cvFile: "https://drive.google.com/file/d/1uHh-wZRthg0mstMV3cL7yrij4AOVeLEc/view?usp=sharing",
     bio: [
       `Bachelor's degree in Informatics with internship experience as a Backend Developer, supported by an official certification from Badan Nasional Sertifikasi Profesi (BNSP) as a Junior Web Programmer, along with various trainings and additional certifications in backend and cloud computing.`,
       `Directly involved in the development of systems such as Manufacturing Execution Systems (MES) and Point of Sales (POS) applications, including API design, database management, and system performance optimization. Experienced in handling data validation, bug fixing, and performance improvements to deliver efficient and reliable systems.`,
@@ -48,7 +50,7 @@ const PORTFOLIO_DATA = {
     { name: "PHP", icon: "fa-brands fa-php", gradient: "from-indigo-500 to-purple-700", category: "language", isFA: true },
     { name: "TypeScript", icon: "devicon-typescript-plain", gradient: "from-blue-500 to-blue-700", category: "language" },
     { name: "SQL", icon: "fa-solid fa-database", gradient: "from-slate-600 to-gray-800", category: "language", isFA: true },
-    
+
 
     // Frameworks & Runtime (A → Z)
     { name: "CodeIgniter", icon: "devicon-codeigniter-plain", gradient: "from-red-600 to-orange-500", category: "framework" },
@@ -223,4 +225,4 @@ const PORTFOLIO_DATA = {
     serviceId: "service_sbejj5z",
     templateId: "template_hgwwjxl",
   },
-};
+} 
