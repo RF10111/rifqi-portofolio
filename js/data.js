@@ -1,5 +1,3 @@
-const { startTransition } = require("react");
-
 const PORTFOLIO_DATA = {
   /* ──────────── Personal Info ──────────── */
   personal: {
