@@ -17,14 +17,12 @@ const PORTFOLIO_DATA = {
     education: "Bachelor of Informatic, Gunadarma University",
     photo: "image/pp.jpg",
     cvFile: "file/CV_Rifqi Fauzan.pdf",
-    bio: `Informatics graduate from Gunadarma University (2025), certified as a 
-    BNSP Junior Web Programmer, with a specialization in Back-End Development and Cloud 
-    Computing (Bangkit Academy alumnus). Experienced in designing, optimizing, and 
-    integrating RESTful APIs for enterprise systems (such as MES and ERP). Possesses strong 
-    proficiency in modern frameworks (NestJS, Laravel, Express.js) and complex relational 
-    database management (PostgreSQL, SQL Server, Prisma). Committed to continuously building 
-    efficient, scalable backend architectures and cloud infrastructures that deliver direct 
-    impact on business operations.`,
+    bio: `Bachelor’s degree in Informatics with internship experience as a Backend Developer, 
+    supported by an official certification from Badan Nasional Sertifikasi Profesi (BNSP) as a Junior Web Programmer, 
+    along with various trainings and additional certifications in backend and cloud computing.
+    Directly involved in the development of systems such as Manufacturing Execution Systems (MES) and Point of Sales (POS) applications, 
+    including API design, database management, and system performance optimization. Experienced in handling data validation, bug fixing, 
+    and performance improvements to deliver efficient and reliable systems.`,
     social: {
       github: "https://github.com/RF10111",
       linkedin: "https://www.linkedin.com/in/rifqifauzan-rf10/",
