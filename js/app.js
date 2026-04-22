@@ -297,7 +297,46 @@
     document.querySelectorAll(".stagger-children").forEach((el) => observer.observe(el));
   }
 
-  // --- Skill category filter ---
+  // --- Skill category filter + toggle ---
+  const SKILL_DEFAULT_VISIBLE = 6;
+  let skillShowAll = false;
+  let skillActiveFilter = "all";
+
+  function updateSkillView() {
+    const cards = document.querySelectorAll("#skills-grid .skill-card");
+    const countEl = document.getElementById("skill-visible-count");
+    const totalEl = document.getElementById("skill-total-count");
+    const toggleBtn = document.getElementById("toggle-skills-btn");
+
+    const filtered = [];
+    cards.forEach((c) => {
+      const match = skillActiveFilter === "all" || c.dataset.category === skillActiveFilter;
+      if (match) filtered.push(c);
+      c.dataset.visible = "false";
+    });
+
+    // Only limit when filter is "all"
+    const shouldLimit = skillActiveFilter === "all" && !skillShowAll;
+    const limit = shouldLimit ? SKILL_DEFAULT_VISIBLE : filtered.length;
+    const shown = Math.min(limit, filtered.length);
+
+    for (let i = 0; i < shown; i++) {
+      filtered[i].dataset.visible = "true";
+    }
+
+    if (countEl) countEl.textContent = shown;
+    if (totalEl) totalEl.textContent = filtered.length;
+
+    if (toggleBtn) {
+      if (skillActiveFilter === "all" && filtered.length > SKILL_DEFAULT_VISIBLE) {
+        toggleBtn.style.display = "";
+        toggleBtn.textContent = skillShowAll ? "Show Less" : "Show All";
+      } else {
+        toggleBtn.style.display = "none";
+      }
+    }
+  }
+
   function initSkillFilter() {
     const container = document.getElementById("skills-categories");
     if (!container) return;
@@ -309,12 +348,18 @@
       container.querySelectorAll(".skills-category-btn").forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
 
-      const filter = btn.dataset.filter;
-      document.querySelectorAll("#skills-grid .skill-card").forEach((card) => {
-        const show = filter === "all" || card.dataset.category === filter;
-        card.dataset.visible = show ? "true" : "false";
-      });
+      skillActiveFilter = btn.dataset.filter;
+      skillShowAll = false;
+      updateSkillView();
     });
+
+    const toggleBtn = document.getElementById("toggle-skills-btn");
+    if (toggleBtn) {
+      toggleBtn.addEventListener("click", () => {
+        skillShowAll = !skillShowAll;
+        updateSkillView();
+      });
+    }
   }
 
   // --- Certificate filter + toggle ---
@@ -462,7 +507,8 @@
     typeEffect(document.getElementById("hero-name"), D.personal.name, 120);
     typeEffect(document.getElementById("hero-title"), D.personal.title, 80, 1800);
 
-    // 4. Initial cert view
+    // 4. Initial views
+    updateSkillView();
     updateCertView();
   }
 

@@ -58,8 +58,9 @@ const PORTFOLIO_DATA = {
     { name: "HTML5", icon: "devicon-html5-plain-wordmark", gradient: "from-orange-400 to-red-500", category: "language" },
     { name: "JavaScript", icon: "devicon-javascript-plain", gradient: "from-yellow-400 to-yellow-600", category: "language" },
     { name: "PHP", icon: "fa-brands fa-php", gradient: "from-indigo-500 to-purple-700", category: "language", isFA: true },
-    { name: "SQL", icon: "fa-solid fa-database", gradient: "from-slate-600 to-gray-800", category: "language", isFA: true },
     { name: "TypeScript", icon: "devicon-typescript-plain", gradient: "from-blue-500 to-blue-700", category: "language" },
+    { name: "SQL", icon: "fa-solid fa-database", gradient: "from-slate-600 to-gray-800", category: "language", isFA: true },
+    
 
     // Frameworks & Runtime (A → Z)
     { name: "CodeIgniter", icon: "devicon-codeigniter-plain", gradient: "from-red-600 to-orange-500", category: "framework" },
@@ -169,7 +170,7 @@ const PORTFOLIO_DATA = {
 
   /* ──────────── Certificates ──────────── */
   certificateCategories: [
-    { id: "all", label: "All Certificates" },
+    { id: "all", label: "All" },
     { id: "bnsp", label: "BNSP" },
     { id: "gcsb", label: "Google Cloud Skill Boost" },
     { id: "coursera", label: "Coursera" },
@@ -180,6 +181,7 @@ const PORTFOLIO_DATA = {
 
   certificates: [
     { title: "Okupasi Junior Web Programmer", category: "bnsp", year: "2024", issuerLabel: "BNSP", issuerColor: "#92400e", image: "image/bnsp.jpg", link: "https://drive.google.com/file/d/1aLpJv8YsUYymxP1h9o9LX0CVwglfmyO2/view?usp=sharing" },
+    { title: "Preparing for Your Associate Cloud Engineer Journey", category: "gcsb", year: "2025", issuerLabel: "GCSB", issuerColor: "#ef4444", image: "image/Preparing for Your Associate Cloud Engineer Journey.png", link: "https://www.skills.google/public_profiles/7bac8c77-7f88-49b6-941a-2f588214bd53/badges/8431341" },
     { title: "Google Cloud Computing Foundations Certificate", category: "gcsb", year: "2024", issuerLabel: "GCSB", issuerColor: "#ef4444", image: "image/Google Cloud Computing Foundations Certificate.png", link: "https://www.credly.com/badges/714a8eca-7334-404a-944d-0d99a06f1425/linked_in_profile" },
     { title: "Develop Serverless Applications on Cloud Run", category: "gcsb", year: "2024", issuerLabel: "GCSB", issuerColor: "#ef4444", image: "image/Develop Serverless Applications on Cloud Run.png", link: "https://www.cloudskillsboost.google/public_profiles/7bac8c77-7f88-49b6-941a-2f588214bd53/badges/9190411" },
     { title: "ML Infrastructure", category: "gcsb", year: "2024", issuerLabel: "GCSB", issuerColor: "#ef4444", image: "image/ML Infrastructure.png", link: "https://www.cloudskillsboost.google/public_profiles/7bac8c77-7f88-49b6-941a-2f588214bd53/badges/9189547" },
@@ -205,6 +207,7 @@ const PORTFOLIO_DATA = {
     { title: "Google Cloud Computing Foundations Cloud Computing Fundamentals", category: "gcsb", year: "2024", issuerLabel: "GCSB", issuerColor: "#ef4444", image: "image/Google Cloud Computing Foundations Cloud Computing Fundamentals.png", link: "https://www.cloudskillsboost.google/public_profiles/7bac8c77-7f88-49b6-941a-2f588214bd53/badges/8291046" },
     { title: "System Administration and IT Infrastructure Services", category: "coursera", year: "2024", issuerLabel: "Coursera", issuerColor: "#22c55e", image: "image/System Administration and IT Infrastructure Services.jpeg", link: "https://www.coursera.org/account/accomplishments/verify/48C882GJXY7B" },
     { title: "The Bits and Bytes of Computer Networking", category: "coursera", year: "2024", issuerLabel: "Coursera", issuerColor: "#22c55e", image: "image/The Bits and Bytes of Computer Networking.jpeg", link: "https://www.coursera.org/account/accomplishments/verify/AT6BN8552WY9" },
+    { title: "Belajar Dasar Cloud dan Gen AI di AWS", category: "dicoding", year: "2025", issuerLabel: "Dicoding", issuerColor: "#3b82f6", image: "image/Belajar Dasar Cloud dan Gen AI di AWS.png", link: "https://drive.google.com/file/d/1QJ7N2S6esFhHlTwowC3dpeWAXeD4cXPP/view?usp=drive_link" },
     { title: "Belajar Penerapan Machine Learning dengan Google Cloud", category: "dicoding", year: "2024", issuerLabel: "Dicoding", issuerColor: "#3b82f6", image: "image/Belajar Penerapan Machine Learning dengan Google Cloud.png", link: "https://drive.google.com/file/d/1bO8mjfU28U22TwbRgifbXxrrTvKt74ii/view?usp=sharing" },
     { title: "Belajar Dasar AI", category: "dicoding", year: "2024", issuerLabel: "Dicoding", issuerColor: "#3b82f6", image: "image/Belajar Dasar AI.png", link: "https://drive.google.com/file/d/168lfjIB2KEOiiuRUCWRZoY0jKMaRrUjV/view?usp=sharing" },
     { title: "Menjadi Google Cloud Engineer", category: "dicoding", year: "2024", issuerLabel: "Dicoding", issuerColor: "#3b82f6", image: "image/Menjadi Google Cloud Engineer.png", link: "https://drive.google.com/file/d/1kDImOp3kto127qO9H4lhuQq7ZF1tJGyu/view?usp=sharing" },

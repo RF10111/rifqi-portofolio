@@ -789,6 +789,40 @@ html:not(.dark) .skill-name {
   display: none;
 }
 
+.skill-count {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+html:not(.dark) .skill-count {
+  color: #64748b;
+}
+
+.skill-count strong {
+  color: var(--color-electric-blue);
+}
+
+.toggle-skills-btn {
+  display: block;
+  margin: 2.5rem auto 0;
+  padding: 0.625rem 2rem;
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--color-electric-blue), var(--color-purple-glow), var(--color-pink-glow));
+  color: white;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.toggle-skills-btn:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-glow-strong);
+}
+
 /* ---------- Projects Section ---------- */
 .projects-section {
   background: rgba(0,0,0,0.15);
