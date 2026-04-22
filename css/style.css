@@ -577,6 +577,15 @@ html:not(.dark) .about-photo img {
   line-height: 1.8;
   margin-bottom: 2rem;
   font-size: 0.9375rem;
+  text-align: justify;
+}
+
+.about-bio p {
+  margin-bottom: 1rem;
+}
+
+.about-bio p:last-child {
+  margin-bottom: 0;
 }
 
 html:not(.dark) .about-bio {

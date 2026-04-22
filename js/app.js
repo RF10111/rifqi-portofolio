@@ -129,7 +129,10 @@
     if (aboutName) aboutName.textContent = p.name;
 
     const aboutBio = el("about-bio-text");
-    if (aboutBio) aboutBio.textContent = p.bio;
+    if (aboutBio) {
+      const bioArr = Array.isArray(p.bio) ? p.bio : [p.bio];
+      aboutBio.innerHTML = bioArr.map((para) => `<p>${para}</p>`).join("");
+    }
 
     const infoPills = el("info-pills");
     if (infoPills) {
