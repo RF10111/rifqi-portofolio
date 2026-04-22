@@ -315,9 +315,7 @@
       c.dataset.visible = "false";
     });
 
-    // Only limit when filter is "all"
-    const shouldLimit = skillActiveFilter === "all" && !skillShowAll;
-    const limit = shouldLimit ? SKILL_DEFAULT_VISIBLE : filtered.length;
+    const limit = skillShowAll ? filtered.length : SKILL_DEFAULT_VISIBLE;
     const shown = Math.min(limit, filtered.length);
 
     for (let i = 0; i < shown; i++) {
@@ -328,7 +326,7 @@
     if (totalEl) totalEl.textContent = filtered.length;
 
     if (toggleBtn) {
-      if (skillActiveFilter === "all" && filtered.length > SKILL_DEFAULT_VISIBLE) {
+      if (filtered.length > SKILL_DEFAULT_VISIBLE) {
         toggleBtn.style.display = "";
         toggleBtn.textContent = skillShowAll ? "Show Less" : "Show All";
       } else {

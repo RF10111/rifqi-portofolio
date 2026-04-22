@@ -10,7 +10,7 @@ const PORTFOLIO_DATA = {
   /* ──────────── Personal Info ──────────── */
   personal: {
     name: "Rifqi Fauzan",
-    title: "Back End Developer & Cloud Engineer",
+    title: "Back End Developer",
     email: "rifqi101003@gmail.com",
     phone: "+62 812 8964 3811",
     location: "Depok, Jawa Barat, Indonesia",
