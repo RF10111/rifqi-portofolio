@@ -1,11 +1,3 @@
-/**
- * Portfolio Data Configuration
- * ────────────────────────────
- * All portfolio content is defined here for easy maintenance.
- * To add a new skill, project, or certificate, simply add an
- * entry to the appropriate array below.
- */
-
 const PORTFOLIO_DATA = {
   /* ──────────── Personal Info ──────────── */
   personal: {
