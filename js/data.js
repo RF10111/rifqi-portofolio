@@ -168,6 +168,7 @@ const PORTFOLIO_DATA = {
   ],
 
   certificates: [
+    { title: "Assistant Web Developer", category: "bnsp", year: "2026", issuerLabel: "BNSP", issuerColor: "#92400e", image: "image/bnsp2.png", link: "https://drive.google.com/file/d/1KYVUABmcw7q6CPeeh2qJTp_d8y-Xbjbc/view?usp=sharing" },
     { title: "Okupasi Junior Web Programmer", category: "bnsp", year: "2025", issuerLabel: "BNSP", issuerColor: "#92400e", image: "image/bnsp.jpg", link: "https://drive.google.com/file/d/1aLpJv8YsUYymxP1h9o9LX0CVwglfmyO2/view?usp=sharing" },
     { title: "Preparing for Your Associate Cloud Engineer Journey", category: "gcsb", year: "2024", issuerLabel: "GCSB", issuerColor: "#ef4444", image: "image/Preparing for Your Associate Cloud Engineer Journey.png", link: "https://www.skills.google/public_profiles/7bac8c77-7f88-49b6-941a-2f588214bd53/badges/8431341" },
     { title: "Google Cloud Computing Foundations Certificate", category: "gcsb", year: "2024", issuerLabel: "GCSB", issuerColor: "#ef4444", image: "image/Google Cloud Computing Foundations Certificate.png", link: "https://www.credly.com/badges/714a8eca-7334-404a-944d-0d99a06f1425/linked_in_profile" },

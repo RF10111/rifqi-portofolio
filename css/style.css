@@ -795,7 +795,7 @@ html:not(.dark) .skill-name {
 }
 
 .skill-card[data-visible="false"] {
-  display: none;
+  display: none !important;
 }
 
 .skill-count {
@@ -1079,7 +1079,9 @@ html:not(.dark) .filter-btn {
 }
 
 .filter-btn:hover,
-.filter-btn.active {
+.filter-btn.active,
+html:not(.dark) .filter-btn:hover,
+html:not(.dark) .filter-btn.active {
   background: linear-gradient(135deg, var(--color-green-glow), #3b82f6);
   color: white;
   transform: translateY(-2px);
@@ -1141,7 +1143,7 @@ html:not(.dark) .cert-card {
 }
 
 .cert-card[data-visible="false"] {
-  display: none;
+  display: none !important;
 }
 
 .cert-card__image {
