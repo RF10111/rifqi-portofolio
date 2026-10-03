@@ -10,7 +10,7 @@ const PORTFOLIO_DATA = {
     photo: "image/pp.jpg",
     cvFile: "https://drive.google.com/file/d/1Q7sQ6memkOAGujN04fQv9kyGzvmlyo0a/view?usp=sharing",
     bio: [
-      `I am a Backend Developer with experience in designing, developing, and optimizing backend systems and REST APIs for business applications and manufacturing systems. My focus is on backend service development, system integration, and database management to support efficient and reliable applications. I work with Node.js, TypeScript, NestJS, Express.js, PostgreSQL, and MySQL to develop REST APIs and implement database-driven business processes. `,
+      `Backend Developer with experience in designing, developing, and optimizing backend systems and REST APIs for business applications and manufacturing systems. My focus is on backend service development, system integration, and database management to support efficient and reliable applications. I work with Node.js, TypeScript, NestJS, Express.js, PostgreSQL, and MySQL to develop REST APIs and implement database-driven business processes. `,
       `My experience includes API performance optimization through asynchronous processing, relational database design, JWT authentication, Role-Based Access Control (RBAC), and session management. I also have experience integrating APIs with Machine Learning services, implementing business logic and data validation, testing APIs using Postman, and deploying cloud-based applications using Google Cloud Platform (GCP).`,
       `To further strengthen my professional capabilities, I pursue relevant training and certifications in software development and backend-related technologies. Through practical project experience and continuous technical development, I aim to build, integrate, and optimize reliable backend solutions that meet system requirements.`,
 
@@ -37,9 +37,9 @@ const PORTFOLIO_DATA = {
      org bersifat opsional: hapus barisnya kalau cuma mau role + tahun.
      TODO: ganti semua placeholder di bawah dengan role & tahun yang sebenarnya. */
   experience: [
-    { role: "Backend Developer – Magang", org: "PT Altimeda Cipta Visitama x Magang Nasional Batch 1 2025", year: "Oktober 2025 – April 2026" },
-    { role: "Full Stack Developer – Magang", org: "Bengkel My Star (Spesialis Mercedes Benz)", year: "Desember 2024 – Mei 2025" },
-    { role: "Cloud Computing – Studi Independen", org: "Bangkit Academy x MSIB Batch 6", year: "Februari 2024 – Juni 2024" },
+    { role: "Backend Developer – Intern", org: "PT Altimeda Cipta Visitama x Magang Nasional Batch 1 2025", year: "October 2025 – April 2026" },
+    { role: "Full Stack Developer – Intern", org: "Bengkel My Star (Spesialis Mercedes Benz)", year: "December 2024 – May 2025" },
+    { role: "Cloud Computing – Independent Study", org: "Bangkit Academy x MSIB Batch 6", year: "February 2024 – June 2024" },
   ],
 
   /* ──────────── Technical Skills ──────────── */
