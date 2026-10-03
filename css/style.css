@@ -651,7 +651,7 @@ html:not(.dark) .about-bio {
   gap: 0.5rem;
   padding: 0.75rem 2rem;
   border-radius: var(--radius-full);
-  background: linear-gradient(135deg, var(--color-electric-blue), var(--color-purple-glow));
+  background: linear-gradient(135deg, var(--color-electric-blue), var(--color-purple-glow), var(--color-pink-glow));
   color: white;
   font-weight: 600;
   font-size: 0.9375rem;
@@ -662,7 +662,7 @@ html:not(.dark) .about-bio {
 
 .btn-primary:hover {
   transform: scale(1.05);
-  box-shadow: var(--shadow-glow);
+  box-shadow: var(--shadow-glow-strong);
 }
 
 /* ---------- Skills Section ---------- */
@@ -684,25 +684,27 @@ html:not(.dark) .about-bio {
   border-radius: var(--radius-full);
   font-size: 0.8125rem;
   font-weight: 600;
-  border: 1px solid rgba(255,255,255,0.1);
-  background: transparent;
-  color: #94a3b8;
+  border: none;
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: all 0.3s ease;
+  background: var(--color-dark-card);
+  color: #94a3b8;
 }
 
 html:not(.dark) .skills-category-btn {
-  border-color: rgba(0,0,0,0.1);
+  background: white;
   color: #64748b;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 .skills-category-btn:hover,
-.skills-category-btn.active {
-  background: linear-gradient(135deg, var(--color-electric-blue), var(--color-purple-glow));
+.skills-category-btn.active,
+html:not(.dark) .skills-category-btn:hover,
+html:not(.dark) .skills-category-btn.active {
+  background: linear-gradient(135deg, var(--color-green-glow), #3b82f6);
   color: white;
-  border-color: transparent;
-  box-shadow: var(--shadow-glow);
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
 }
 
 /* Skill cards grid */
@@ -1040,6 +1042,122 @@ html:not(.dark) .project-desc {
   color: white;
   box-shadow: var(--shadow-glow);
   transform: scale(1.05);
+}
+
+/* ---------- Experience Section ---------- */
+.experience-section {
+  background: rgba(0,0,0,0.15);
+  scroll-margin-top: 5rem;
+}
+
+html:not(.dark) .experience-section {
+  background: #f1f5f9;
+}
+
+.timeline {
+  position: relative;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 0 0 32px;
+  list-style: none;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, var(--color-electric-blue), var(--color-purple-glow), var(--color-pink-glow));
+  opacity: 0.6;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 1.35rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--color-electric-blue);
+  border: 2px solid var(--color-dark-bg);
+  box-shadow: 0 0 12px rgba(0, 191, 255, 0.6);
+}
+
+html:not(.dark) .timeline-item::before {
+  border-color: #f1f5f9;
+  box-shadow: 0 0 0 1px rgba(0, 191, 255, 0.35);
+}
+
+.timeline-item:last-child::before {
+  background: var(--color-green-glow);
+}
+
+.timeline-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-lg);
+  background: var(--color-dark-card);
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+html:not(.dark) .timeline-card {
+  background: white;
+  border-color: rgba(0,0,0,0.06);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.timeline-card:hover,
+html:not(.dark) .timeline-card:hover {
+  transform: translateX(4px);
+  border-color: rgba(0, 191, 255, 0.45);
+}
+
+.timeline-role {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+html:not(.dark) .timeline-role {
+  color: #0f172a;
+}
+
+.timeline-org {
+  margin-top: 0.125rem;
+  font-size: 0.8125rem;
+  color: #94a3b8;
+}
+
+html:not(.dark) .timeline-org {
+  color: #64748b;
+}
+
+.timeline-year {
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+  white-space: nowrap;
+  background: linear-gradient(135deg, var(--color-green-glow), #3b82f6);
 }
 
 /* ---------- Certificates Section ---------- */

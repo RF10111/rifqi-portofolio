@@ -24,10 +24,20 @@ const PORTFOLIO_DATA = {
   navigation: [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
+    { label: "Experience", href: "#experience" },
     { label: "Projects", href: "#projects" },
     { label: "Tech Skills", href: "#skills" },
     { label: "Certificates", href: "#certificates" },
     { label: "Contact", href: "#contact" },
+  ],
+
+  /* ──────────── Experience (urut dari yang paling awal → terbaru) ────────────
+     org bersifat opsional: hapus barisnya kalau cuma mau role + tahun.
+     TODO: ganti semua placeholder di bawah dengan role & tahun yang sebenarnya. */
+  experience: [
+    { role: "Backend Developer", org: "Altimeda Cipta Visitama", year: "2025" },
+    { role: "Full Stack Developer", org: "Bengkel My Star", year: "2024 - 2025" },
+    { role: "Cloud Computing", org: "Bangkit Academy", year: "2023 - 2024" },
   ],
 
   /* ──────────── Technical Skills ──────────── */
@@ -224,4 +234,4 @@ const PORTFOLIO_DATA = {
     serviceId: "service_sbejj5z",
     templateId: "template_hgwwjxl",
   },
-} 
+}
