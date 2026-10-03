@@ -1130,31 +1130,32 @@ html:not(.dark) .timeline-card:hover {
   border-color: rgba(0, 191, 255, 0.45);
 }
 
-.timeline-role {
-  font-size: 1rem;
-  font-weight: 600;
+.timeline-org {
+  margin-top: 0.125rem;
+  font-size: 0.875rem;
   color: #e2e8f0;
 }
 
-html:not(.dark) .timeline-role {
+html:not(.dark) .timeline-org {
   color: #0f172a;
 }
 
-.timeline-org {
-  margin-top: 0.125rem;
-  font-size: 0.8125rem;
+.timeline-role {
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-style: italic;
   color: #94a3b8;
 }
 
-html:not(.dark) .timeline-org {
+html:not(.dark) .timeline-role {
   color: #64748b;
 }
 
 .timeline-year {
-  padding: 0.25rem 0.75rem;
+  padding: 0.15rem 0.5rem;
   border-radius: var(--radius-full);
-  font-size: 0.75rem;
-  font-weight: 700;
+  font-size: 0.65rem;
+  font-weight: 600;
   color: white;
   white-space: nowrap;
   background: linear-gradient(135deg, var(--color-green-glow), #3b82f6);

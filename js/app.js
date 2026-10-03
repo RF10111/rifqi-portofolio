@@ -119,24 +119,30 @@
 
   /** Render experience timeline */
   function renderExperience() {
-    const list = document.getElementById("experience-list");
-    if (!list || !Array.isArray(D.experience)) return;
+  const list = document.getElementById("experience-list");
 
-    list.innerHTML = D.experience
-      .map(
-        (e) => `
-      <li class="timeline-item">
-        <div class="timeline-card">
-          <div class="timeline-info">
-            <h3 class="timeline-role">${e.role}</h3>
-            ${e.org ? `<p class="timeline-org">${e.org}</p>` : ""}
+  if (!list || !Array.isArray(D.experience)) return;
+
+  list.innerHTML = D.experience
+    .map(
+      (e) => `
+        <li class="timeline-item">
+          <div class="timeline-card">
+            <div class="timeline-info">
+              ${
+                e.org
+                  ? `<h4 class="timeline-org">${e.org}</h4>`
+                  : ""
+              }
+              <p class="timeline-role">${e.role}</p>
+            </div>
+            <span class="timeline-year">${e.year}</span>
           </div>
-          <span class="timeline-year">${e.year}</span>
-        </div>
-      </li>`
-      )
-      .join("");
-  }
+        </li>
+      `
+    )
+    .join("");
+}
 
   /** Render personal info into the About section */
   function renderAbout() {
